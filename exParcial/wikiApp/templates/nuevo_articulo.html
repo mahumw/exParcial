@@ -1,0 +1,40 @@
+{% extends "layuot.html" %}
+
+{% block title %}
+    Nuevo Articulo 
+{% endblock %}
+
+{% block contenido %}
+                
+<!-- Sección derecha: Formulario para crear un nuevo artículo -->
+<div class="col-md-9 main-content p-4">
+    <h2>Crear Nuevo Artículo</h2>
+    <form>
+        <!-- Campo para el título del artículo -->
+        <div class="mb-3">
+            <label for="titulo" class="form-label">Título</label>
+            <input type="text" class="form-control" id="titulo" placeholder="Escribe el título del artículo">
+        </div>
+        
+        <!-- Seleccionable para los temas -->
+        <div class="mb-3">
+            <label for="tema" class="form-label">Tema</label>
+            <select class="form-select" id="tema">
+                <option value="">Selecciona un tema</option>
+                <option value="tema1">Tema 1</option>
+                <option value="tema2">Tema 2</option>
+                <!-- Los temas se podrían llenar dinámicamente desde la base de datos -->
+            </select>
+        </div>
+        
+        <!-- Área de texto para el contenido del artículo -->
+        <div class="mb-3">
+            <label for="contenido" class="form-label">Contenido del artículo</label>
+            <textarea class="form-control" id="contenido" rows="10" placeholder="Escribe el contenido aquí..."></textarea>
+        </div>
+        
+        <!-- Botón de enviar -->
+        <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+
+{% endblock %}

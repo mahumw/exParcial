@@ -1,0 +1,29 @@
+{% extends "layuot.html" %}
+
+{% block title %}
+Registro Nuevo tema
+{% endblock %}
+
+{% block contenido %}
+                
+<!-- Sección derecha: Formulario para crear un nuevo tema -->
+<div class="col-md-9 main-content p-4">
+    <h2>Crear Nuevo Tema</h2>
+    <form>
+        <!-- Campo para el título del tema -->
+        <div class="mb-3">
+            <label for="titulo" class="form-label">Título</label>
+            <input type="text" class="form-control" id="titulo" placeholder="Escribe el título del Tema">
+        </div>
+             
+        <!-- Área de texto para el contenido del tema -->
+        <div class="mb-3">
+            <label for="contenido" class="form-label">Contenido del Tema</label>
+            <textarea class="form-control" id="contenido" rows="10" placeholder="Escribe el contenido del Tema aquí..."></textarea>
+        </div>
+        
+        <!-- Botón de enviar -->
+        <button type="submit" class="btn btn-success">Enviar</button>
+    </form>
+
+{% endblock %}

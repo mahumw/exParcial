@@ -1,0 +1,36 @@
+{% extends "layuot.html" %}
+
+{% block title %}
+    Inicio 
+{% endblock %}
+
+{% block contenido %}
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Panel izquierdo: Barra lateral -->
+        <div class="col-md-3 sidebar bg-light border-end">
+            <h2 class="sidebar-title">Temas</h2>
+            <!-- Barra de búsqueda -->
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Buscar temas...">
+            </div>
+            <!-- Lista de enlaces -->
+            <ul class="list-group mb-3">
+                <!-- Ejemplo de tema registrado -->
+                <li class="list-group-item">
+                    <a href="#">Tema 1</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="#">Tema 2</a>
+                </li>
+                <!-- Más temas registrados... -->
+            </ul>
+            <!-- Botones -->    
+            <div>
+                <button onclick="location.href='nuevo_tema'" class="btn btn-primary w-100 mb-2">Crear nuevo tema</button>
+                <button onclick="location.href='nuevo_articulo'"class="btn btn-secondary w-100">Crear nuevo artículo</button>
+            </div>
+        </div>
+
+{% endblock %}
